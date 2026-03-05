@@ -11,9 +11,9 @@ type Status = 'idle' | 'submitting' | 'success' | 'error'
 
 const NEEDS = [
   'Marketing Automation',
+  'Systems Automation',
+  'Ai Integrations',
   'Lead Generation System',
-  'CRM Integration',
-  'Email Campaign Setup',
   'Full Funnel Build',
   'Something Else',
 ]

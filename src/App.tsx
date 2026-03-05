@@ -16,14 +16,13 @@ const card = {
   website: 'thesurewinagency.com',
   linkedin: 'www.linkedin.com/in/thesurewin',
   twitter: '',
-  skills: ['Automations', 'Ai Solutions', 'HubSpot', 'Meta Ads', 'Email Flows', 'Lead Gen', 'Zapier', 'AI Agents'],
+  skills: ['Automation Solutions', 'AI Integration', 'MCP Integration', 'Marketing Strategy', "Operational Frameworks"],
   stats: [
     { value: 200, suffix: '+', label: 'Automations Built' },
-    { value: 50,  prefix: '£', suffix: 'M+', label: 'Emails Delivered' },
-    { value: 3,   suffix: 'x',  label: 'Avg. ROI' },
+    { value: 1,  prefix: '£', suffix: 'M+', label: 'Lost Revenue Recovered' },
   ],
   // Replace with your actual n8n webhook URL
-  n8nWebhookUrl: 'https://your-n8n.com/webhook/YOUR_WEBHOOK_ID',
+  n8nWebhookUrl: 'https://n8n.srv1055075.hstgr.cloud/webhook-test/3eedc6f3-bfa4-4d98-9c1c-5c2d2b265394',
 }
 
 // ─── Count-up hook ────────────────────────────────────────────────────────────
@@ -200,9 +199,7 @@ export default function App() {
 
         {/* Social */}
         <div className="social-row">
-          <a href={card.linkedin} className="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><LinkedInIcon /></a>
-          <a href={card.twitter}  className="social-link" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><XIcon /></a>
-        </div>
+          </div>
       </div>
 
       {showContact && <ContactModal name={card.name} email={card.email} webhookUrl={card.n8nWebhookUrl} onClose={() => setShowContact(false)} />}
